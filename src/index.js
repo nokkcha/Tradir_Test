@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import Routes from "./Routes";
 import { Provider } from "react-redux";
 import rootReducer from "./Modules";
@@ -25,7 +25,10 @@ sagaMiddleware.run(rootSaga);
 ReactDOM.render(
   <Provider store={store}>
     <Routes />
-  </Provider>
-  ,
-  document.getElementById('root')
+  </Provider>,
+  document.getElementById("root")
 );
+
+//결국 redux 써야함.. 장바구니만 구현하자 ... ㅠ
+//redux 마스터해서 column까지 고정도,..
+// store에 정보가 저장된다...
