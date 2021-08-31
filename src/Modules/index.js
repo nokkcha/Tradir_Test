@@ -3,14 +3,16 @@ import { all } from "redux-saga/effects";
 //watcher saga -> actions -> worker saga
 // import loading from "./loading";
 import { enableES5 } from "immer";
-import { connect } from "react-redux";
 
 enableES5();
 
 //초기값
-let BeerCart = [{ id: 0, name: "시원한 맥주", quan: 2, image: null }];
+let BeerCart = [];
 
 function rootReducer(state = BeerCart, action) {
+  if (state === undefined) {
+    alert("장바구니에 맥주를 추가하세요!");
+  }
   if (action.type === "항목추가") {
     let found = state.findIndex((a) => {
       return a.name === action.data.name;
