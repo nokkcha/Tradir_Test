@@ -21,6 +21,9 @@
   ![tradir_2](https://user-images.githubusercontent.com/74946505/131535473-d675ae6b-d193-4fe5-ba4b-3d7648596c96.gif)
     <br>
 ![tradir_3](https://user-images.githubusercontent.com/74946505/131538320-dc3e310d-7be0-4c83-9638-3d1c59fc0879.gif)
+    <br>
+  ![tradir_4](https://user-images.githubusercontent.com/74946505/131539219-a795f20a-10c6-43b1-9416-40841a7331d0.gif)
+
 
 🛠 구현한 기능
 
