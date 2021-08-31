@@ -33,7 +33,7 @@ const Navigation = () => {
       <Header>
         <Title>Maekju Saseyo🍻</Title>
         <Menubar>
-          <Menu to="/">Home</Menu>
+          <Menu to="/home">Home</Menu>
           <Menu to="/beerlist">Beer list</Menu>
           <Menu to="/cart">Cart</Menu>
         </Menubar>

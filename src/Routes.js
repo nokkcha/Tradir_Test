@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import BeerList from "./Pages/BeerList";
 import Home from "./Pages/Home";
 import Navigation from "./Navigation";
@@ -11,7 +11,8 @@ const Routes = () => {
     <>
       <Router>
         <Navigation />
-        <Route path="/" exact={true} component={Home} />
+        <Redirect exact from="/" to="/home" />
+        <Route exact path="/home" component={Home} />
         <Route exact path="/beerlist" component={BeerList} />
         <Route exact path="/cart" component={Cart} />
       </Router>
