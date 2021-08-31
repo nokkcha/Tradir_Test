@@ -149,7 +149,7 @@ const BeerList = () => {
           search: false,
           toolbar: true,
           actionsColumnIndex: -1,
-          headerStyle: { fontSize: 36, padding: 30 },
+          headerStyle: { fontSize: 36, padding: 30, zIndex: 0 },
           rowStyle: {
             fontSize: 30,
             textAlign: "center",
