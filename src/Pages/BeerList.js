@@ -86,9 +86,11 @@ const BeerList = () => {
 
   const columns = [
     {
-      title: "pic",
+      title: "🍺",
       field: "image_url",
-
+      cellStyle: {
+        textAlign: "center",
+      },
       render: (rowData) => (
         <img
           style={{ height: 250 }}
@@ -98,12 +100,19 @@ const BeerList = () => {
       ),
     },
     {
-      title: "Name",
+      title: "맥주 이름",
       field: "name",
+      cellStyle: {
+        textAlign: "center",
+        width: "100px",
+      },
     },
     {
-      title: "ABS",
+      title: "도수",
       field: "abv",
+      cellStyle: {
+        textAlign: "center",
+      },
     },
   ];
 
@@ -131,6 +140,13 @@ const BeerList = () => {
         actions={[
           {
             icon: "+",
+            iconProps: {
+              style: {
+                fontSize: "36px",
+                textAlign: "center",
+                marginLeft: 100,
+              },
+            },
             tooltip: "Put cart",
             onClick: (event, rowData) => {
               dispatch({
@@ -148,8 +164,12 @@ const BeerList = () => {
         options={{
           search: false,
           toolbar: true,
-          actionsColumnIndex: -1,
-          headerStyle: { fontSize: 36, padding: 30, zIndex: 0 },
+          headerStyle: {
+            fontSize: 36,
+            padding: 40,
+            zIndex: 0,
+            textAlign: "center",
+          },
           rowStyle: {
             fontSize: 30,
             textAlign: "center",
